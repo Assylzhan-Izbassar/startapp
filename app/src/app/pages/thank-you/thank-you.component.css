@@ -1,0 +1,50 @@
+.thanks {
+}
+.thanks__container {
+}
+.thanks__inner {
+  max-width: 285px;
+  margin: 0 auto;
+  position: relative;
+}
+.thanks__inner > *:not(:last-child) {
+  margin-bottom: 23px;
+}
+.thanks__heading {
+}
+.thanks__content {
+}
+.thanks__paragraphs {
+  margin-bottom: 23px;
+}
+.thanks__paragraphs > *:not(:last-child) {
+  margin-bottom: 12px;
+}
+.thanks__paragraph {
+}
+.thanks__sign {
+}
+.sign {
+  display: flex;
+}
+.sign__left {
+  min-width: 109px;
+  max-height: 109px;
+  padding: 0 0 calc(109 / 285 * 100%) 0;
+  border-radius: 54.5px;
+}
+.sign__right {
+  margin-left: 29px;
+}
+.sign__text {
+}
+.sign__elem {
+  max-height: 64px;
+  padding: 0 0 calc(150 / 285 * 100%) 0;
+}
+.sign__elem img {
+  object-fit: contain;
+}
+.thanks__action .action__button {
+  width: 100%;
+}

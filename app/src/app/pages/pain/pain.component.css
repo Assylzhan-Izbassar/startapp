@@ -1,0 +1,36 @@
+.pain {
+  position: relative;
+}
+.pain__image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.65;
+}
+._img {
+}
+.pain__container {
+}
+.pain__container > *:not(:first-child) {
+  margin-top: 23px;
+}
+.pain__heading {
+}
+.heading {
+}
+.heading_center {
+}
+.heading__subtext {
+}
+.heading__text {
+}
+.pain__paragraph {
+}
+.paragraph {
+}
+.paragraph__text {
+}
+.paragraph__text_center {
+}

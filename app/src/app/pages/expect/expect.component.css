@@ -1,0 +1,26 @@
+.expect {
+  background-color: var(--primary);
+}
+.expect__header {
+  margin-bottom: 30px;
+}
+.expect__carts {
+  position: relative;
+}
+.expect__carts > *:not(:last-child) {
+  margin-bottom: 23px;
+}
+.expect__item {
+  background-color: var(--secondary);
+}
+.expect__img {
+  padding: 0 0 calc(200 / 318 * 100%) 0;
+}
+.expect__content {
+  max-width: 319px;
+  margin: 0 auto;
+  padding: 10px 0 20px 0;
+}
+.expect__content > *:not(:last-child) {
+  margin-bottom: 7px;
+}

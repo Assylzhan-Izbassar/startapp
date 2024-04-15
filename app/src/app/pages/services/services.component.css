@@ -1,0 +1,75 @@
+.services {
+  background-color: var(--primary);
+}
+.services__container {
+}
+.services__container > *:not(:last-child) {
+  margin-bottom: 23px;
+}
+.services__header {
+}
+.services__carts {
+}
+.services__carts-inner {
+  display: flex;
+  margin-left: -179.19px !important;
+}
+.services__item {
+  position: relative;
+  min-width: 249.19px;
+  background-color: var(--secondary);
+}
+.services__item:not(:last-child) {
+  margin-right: 23px;
+}
+.services__inner {
+  max-width: 229.19px;
+  margin: 0 auto;
+  padding: 15px 0 30px 0;
+}
+.services__inner > *:not(:last-child) {
+  margin-bottom: 15px;
+}
+.services__img {
+  padding: 0 0 calc(223 / 249.19 * 100%) 0;
+}
+.services__content {
+}
+.services__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.services__title-heading {
+  max-width: 165.69px;
+}
+.services__paragraph {
+  max-width: 165.69px;
+}
+.services__scroll {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  max-height: 40px;
+}
+.services__arrow {
+  min-width: 40px;
+  padding: 0 0 calc(40 / 343 * 100%) 0;
+}
+.services__dots {
+  display: flex;
+  margin: 0 23px !important;
+}
+.services__dots > *:not(:last-child) {
+  margin-right: 8.75px;
+}
+.services__dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 7px;
+  background-color: var(--secondary);
+}
+.services__dot_light {
+  background-color: var(--accent);
+}

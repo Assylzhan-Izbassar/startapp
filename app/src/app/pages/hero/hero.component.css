@@ -1,0 +1,22 @@
+.hero {
+  background-color: var(--primary);
+}
+.hero__container {
+}
+.hero__img {
+  padding: 0px 0px calc(285 / 343 * 100%) 0px;
+}
+.hero__content {
+  max-width: calc(285 / 343 * 100%);
+  margin: 0 auto;
+  margin-top: -74px;
+}
+.hero__content > *:not(:last-child) {
+  margin-bottom: 23px;
+}
+.hero__heading {
+}
+.hero__paragraph {
+}
+.hero__action {
+}

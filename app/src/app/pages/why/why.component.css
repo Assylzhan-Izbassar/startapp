@@ -1,0 +1,22 @@
+.why {
+}
+.why__container {
+}
+.why__heading {
+  margin-bottom: 23px;
+}
+.carts {
+}
+.carts__item:not(:first-child) {
+  margin-top: 30px;
+}
+.carts__header {
+  display: flex;
+  align-items: center;
+}
+.carts__number {
+}
+.carts__title {
+}
+.carts__paragraph {
+}

@@ -1,0 +1,24 @@
+.action {
+}
+.action__container {
+}
+
+.action__container > *:not(:last-child) {
+  margin-bottom: 23px;
+}
+.action__heading {
+}
+.heading__subtext {
+}
+.heading__text {
+}
+.action__paragraph {
+  max-width: 253px;
+  margin: 0 auto;
+}
+.paragraph {
+}
+.paragraph__text {
+}
+.paragraph__text_center {
+}
