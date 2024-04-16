@@ -4,7 +4,7 @@
 .hero__container {
 }
 .hero__img {
-  padding: 0px 0px calc(285 / 343 * 100%) 0px;
+  padding: 0px 0px calc(262 / 343 * 100%) 0px;
 }
 .hero__content {
   max-width: calc(285 / 343 * 100%);

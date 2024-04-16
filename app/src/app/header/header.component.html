@@ -1,0 +1,51 @@
+<!-- HEADER -->
+<div class="header">
+  <div class="header__container">
+    <div class="header__logo">
+      <img src="assets/icons/logo.svg" alt="StartApp Logo Icon" />
+    </div>
+    <div class="header__menu">
+      <div class="header__burger" (click)="toggleNav()">
+        <img src="assets/icons/menu.svg" alt="Header Menu Icon" />
+      </div>
+      <div class="header__close" (click)="toggleNav()">
+        <div class="heading">
+          <span class="heading__text-4">Закрыть</span>
+        </div>
+        <img src="assets/icons/close.svg" alt="Header Menu Icon" />
+      </div>
+    </div>
+  </div>
+  <!-- MENU BURGER -->
+  <div class="menu">
+    <div class="menu__container _container">
+      <ul class="menu__items">
+        <li class="menu__item heading">
+          <span class="heading__text-4">Основной экран</span>
+        </li>
+        <li class="menu__item heading">
+          <span class="heading__text-4">Страх перед неизвестностью</span>
+        </li>
+        <li class="menu__item heading">
+          <span class="heading__text-4">Что мы предлагаем</span>
+        </li>
+        <li class="menu__item heading">
+          <span class="heading__text-4">Почему выбирают нас</span>
+        </li>
+        <li class="menu__item heading">
+          <span class="heading__text-4">Что можешь ожидать в конце</span>
+        </li>
+
+        <li class="menu__item">
+          <div class="action">
+            <a
+              [routerLink]="['contact-us']"
+              class="action__button action__button_notrounded"
+              >Записаться</a
+            >
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

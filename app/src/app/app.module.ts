@@ -12,6 +12,8 @@ import { ActionComponent } from './pages/action/action.component';
 import { MainComponent } from './pages/main/main.component';
 import { ContactUsComponent } from './pages/contact-us/contact-us.component';
 import { ThankYouComponent } from './pages/thank-you/thank-you.component';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { ThankYouComponent } from './pages/thank-you/thank-you.component';
     ActionComponent,
     MainComponent,
     ContactUsComponent,
-    ThankYouComponent
+    ThankYouComponent,
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
