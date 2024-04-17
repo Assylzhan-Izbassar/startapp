@@ -103,9 +103,7 @@ export class ContactUsComponent implements OnInit {
 
   private addError() {
     const invalidNames = this.getInvalidControls();
-    console.log(invalidNames);
     for (const name of invalidNames) {
-      console.log(name);
       let input = this.elemRef.nativeElement.querySelector(
         '#' + name
       ) as HTMLElement;
