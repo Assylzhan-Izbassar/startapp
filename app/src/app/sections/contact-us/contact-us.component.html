@@ -5,7 +5,7 @@
       <div class="contact__heading heading heading_center">
         <h2 class="heading__text">Свяжитесь с нами!</h2>
       </div>
-      <form class="contact__form form" action="#" method="post">
+      <form [formGroup]="leadInfo" class="contact__form form" method="post">
         <div class="form__item">
           <label class="form__label" for="name">Имя</label>
           <input
@@ -14,20 +14,24 @@
             name="name"
             type="text"
             placeholder="Введите Ваше имя"
+            [formControl]="leadInfo.controls.name"
           />
         </div>
         <div class="form__item">
-          <label class="form__label" for="phone_number">Номер телефона</label>
+          <label class="form__label" for="phoneNumber">Номер телефона</label>
           <input
-            id="phone_number"
+            id="phoneNumber"
             class="form__input"
-            name="phone_number"
+            name="phoneNumber"
             type="text"
             placeholder="87777777777"
+            [formControl]="leadInfo.controls.phoneNumber"
           />
         </div>
         <div class="form__action action">
-          <a [routerLink]="['/thank-you']" class="action__button">Отправить</a>
+          <a [routerLink]="" class="action__button" (click)="send()"
+            >Отправить</a
+          >
         </div>
       </form>
     </div>
