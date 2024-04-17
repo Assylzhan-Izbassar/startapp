@@ -2,7 +2,9 @@
 <div class="header">
   <div class="header__container">
     <div class="header__logo">
-      <img src="assets/icons/logo.svg" alt="StartApp Logo Icon" />
+      <a [routerLink]="['']">
+        <img src="assets/icons/logo.svg" alt="StartApp Logo Icon" />
+      </a>
     </div>
     <div class="header__menu">
       <div class="header__burger" (click)="toggleNav()">
@@ -41,6 +43,7 @@
             <a
               [routerLink]="['contact-us']"
               class="action__button action__button_notrounded"
+              (click)="closeNav()"
               >Записаться</a
             >
           </div>

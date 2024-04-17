@@ -12,7 +12,6 @@
 }
 .services__carts-inner {
   display: flex;
-  margin-left: -179.19px !important;
 }
 .services__item {
   position: relative;
@@ -59,16 +58,16 @@
 }
 .services__dots {
   display: flex;
-  margin: 0 23px !important;
-}
-.services__dots > *:not(:last-child) {
-  margin-right: 8.75px;
+  margin: 0 23px;
 }
 .services__dot {
   width: 14px;
   height: 14px;
   border-radius: 7px;
   background-color: var(--secondary);
+}
+.services__dot:not(:last-child) {
+  margin-right: 8.75px;
 }
 .services__dot_light {
   background-color: var(--accent);

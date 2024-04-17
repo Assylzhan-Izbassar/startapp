@@ -24,17 +24,30 @@ export class HeaderComponent {
     )[0] as HTMLElement;
     this.menuNode = document.getElementsByClassName('menu')[0] as HTMLElement;
 
-    if (this.isNavShowed) {
-      this.renderer.setStyle(this.burgerNode, 'display', 'none');
-      this.renderer.setStyle(this.closeNode, 'display', 'flex');
-      this.renderer.setStyle(this.menuNode, 'display', 'block');
-      this.renderer.setStyle(this.body, 'overflow', 'hidden');
+    if (!this.isNavShowed) {
+      this.showNav();
     } else {
-      this.renderer.setStyle(this.burgerNode, 'display', 'block');
-      this.renderer.setStyle(this.closeNode, 'display', 'none');
-      this.renderer.setStyle(this.menuNode, 'display', 'none');
-      this.renderer.setStyle(this.body, 'overflow', 'auto');
+      this.hideNav();
     }
-    this.isNavShowed = this.isNavShowed ? false : true;
+  }
+
+  private showNav() {
+    this.renderer.setStyle(this.burgerNode, 'display', 'none');
+    this.renderer.setStyle(this.closeNode, 'display', 'flex');
+    this.renderer.setStyle(this.menuNode, 'display', 'block');
+    this.renderer.setStyle(this.body, 'overflow', 'hidden');
+    this.isNavShowed = true;
+  }
+
+  private hideNav() {
+    this.renderer.setStyle(this.burgerNode, 'display', 'block');
+    this.renderer.setStyle(this.closeNode, 'display', 'none');
+    this.renderer.setStyle(this.menuNode, 'display', 'none');
+    this.renderer.setStyle(this.body, 'overflow', 'auto');
+    this.isNavShowed = false;
+  }
+
+  closeNav() {
+    this.hideNav();
   }
 }

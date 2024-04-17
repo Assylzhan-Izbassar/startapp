@@ -49,17 +49,16 @@
       </ul>
     </div>
     <div class="services__scroll">
-      <div class="services__arrow _img">
+      <div class="services__arrow _img" (click)="switchLeft()">
         <img src="assets/icons/left.png" alt="Left Arrow" />
       </div>
       <ul class="services__dots">
-        <li class="services__dot services__dot_light"></li>
-        <li class="services__dot"></li>
-        <li class="services__dot"></li>
-        <li class="services__dot"></li>
-        <li class="services__dot"></li>
+        <li
+          class="services__dot"
+          *ngFor="let item of [].constructor(cartsCount); let i = index"
+        ></li>
       </ul>
-      <div class="services__arrow _img">
+      <div class="services__arrow _img" (click)="switchRight()">
         <img src="assets/icons/right.png" alt="Right Arrow" />
       </div>
     </div>
