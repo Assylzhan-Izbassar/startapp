@@ -1,7 +1,9 @@
 <div class="header">
   <div class="header__container">
-    <div class="header__logo" [routerLink]="['']" (click)="closeNav()">
-      <img src="assets/icons/logo.svg" alt="StartApp Logo Icon" />
+    <div class="header__logo" (click)="closeNav()">
+      <a [routerLink]="['/']">
+        <img src="assets/icons/logo.svg" alt="StartApp Logo Icon"
+      /></a>
     </div>
     <div class="header__menu">
       <div class="header__burger" (click)="toggleNav()">
@@ -20,24 +22,33 @@
     <div class="menu__container _container">
       <ul class="menu__items">
         <li class="menu__item heading">
-          <span class="heading__text-4" (click)="scrollToFragment('hero')">Основной экран</span>
+          <span class="heading__text-4" (click)="scrollToFragment('hero')"
+            >Основной экран</span
+          >
         </li>
         <li class="menu__item heading">
-          <span class="heading__text-4" (click)="scrollToFragment('pain')">Стандартные технологий</span>
+          <span class="heading__text-4" (click)="scrollToFragment('pain')"
+            >Стандартные технологий</span
+          >
         </li>
         <li class="menu__item heading">
-          <span class="heading__text-4" (click)="scrollToFragment('services')">Как мы работаем</span>
+          <span class="heading__text-4" (click)="scrollToFragment('services')"
+            >Как мы работаем</span
+          >
         </li>
         <li class="menu__item heading">
-          <span class="heading__text-4" (click)="scrollToFragment('why')">Почему выбирают нас</span>
+          <span class="heading__text-4" (click)="scrollToFragment('why')"
+            >Почему выбирают нас</span
+          >
         </li>
         <li class="menu__item heading">
-          <span class="heading__text-4" (click)="scrollToFragment('expect')">Результаты от нашей работы</span>
+          <span class="heading__text-4" (click)="scrollToFragment('expect')"
+            >Результаты от нашей работы</span
+          >
         </li>
         <li class="menu__item">
           <div class="action">
             <a
-              [routerLink]="['contact-us']"
               class="action__button action__button_notrounded"
               (click)="scrollToFragment('action')"
               >Записаться</a
