@@ -6,6 +6,5 @@
     "types": ["node"]
   },
   "files": ["src/main.ts", "src/main.server.ts", "server.ts"],
-  "include": ["src/**/*.d.ts"],
-  "exclude": ["src/app/app.module.server.ts", "src/main.server.ts"]
+  "include": ["src/**/*.d.ts"]
 }
