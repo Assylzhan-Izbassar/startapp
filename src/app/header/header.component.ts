@@ -1,4 +1,4 @@
-import { Component, Renderer2 } from '@angular/core';
+import { AfterContentChecked, Component, Renderer2 } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -6,7 +6,7 @@ import { Router } from '@angular/router';
   templateUrl: './header.component.html',
   styleUrl: './header.component.css',
 })
-export class HeaderComponent {
+export class HeaderComponent implements AfterContentChecked {
   body: HTMLElement | undefined;
   burgerNode: HTMLElement | undefined;
   closeNode: HTMLElement | undefined;
@@ -15,7 +15,7 @@ export class HeaderComponent {
 
   constructor(private renderer: Renderer2, private router: Router) {}
 
-  toggleNav() {
+  ngAfterContentChecked(): void {
     this.body = document.body;
     this.burgerNode = document.getElementsByClassName(
       'header__burger'
@@ -24,7 +24,9 @@ export class HeaderComponent {
       'header__close'
     )[0] as HTMLElement;
     this.menuNode = document.getElementsByClassName('menu')[0] as HTMLElement;
+  }
 
+  toggleNav() {
     if (!this.isNavShowed) {
       this.showNav();
     } else {
