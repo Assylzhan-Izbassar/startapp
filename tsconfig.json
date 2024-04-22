@@ -18,11 +18,16 @@
     "target": "ES2022",
     "module": "ES2022",
     "useDefineForClassFields": false,
-    "lib": [
-      "ES2022",
-      "dom"
-    ]
+    "lib": ["ES2022", "dom"]
   },
+  "include": [
+    "src/**/*.ts"
+    // Add any other necessary paths here, excluding Angular Universal related files
+  ],
+  "exclude": [
+    "src/app/app.module.server.ts",
+    "src/main.server.ts"
+  ],
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
     "strictInjectionParameters": true,

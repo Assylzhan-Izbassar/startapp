@@ -13,18 +13,9 @@
   display: flex;
   min-height: 70px;
   justify-content: space-between;
-  align-items: end;
+  align-items: flex-end;
   padding: 0px 16px;
   margin-bottom: 16px;
-}
-
-.header__logo {
-}
-
-.header__menu {
-}
-
-.header__burger {
 }
 .header__close {
   display: none;
