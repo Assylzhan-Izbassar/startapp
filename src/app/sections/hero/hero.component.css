@@ -1,5 +1,5 @@
 .hero {
-  background-color: var(--primary);
+  background-color: var(--primary-3);
 }
 .hero__container {
 }
@@ -15,8 +15,10 @@
   margin-bottom: 23px;
 }
 .hero__heading {
+  color: var(--secondary-1);
 }
 .hero__paragraph {
+  color: var(--secondary-2);
 }
 .hero__action {
 }

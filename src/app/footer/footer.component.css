@@ -1,13 +1,6 @@
-/* FOOTER */
 .footer {
-  background-color: var(--primary);
+  background-color: var(--primary-3);
   position: relative;
-}
-.footer__scroll {
-  position: absolute;
-  padding: 0 18.67% 18.67% 0;
-  top: calc((116 + 35) / 375 * 100%);
-  left: calc((224) / 302 * 100%);
 }
 .footer__container {
   text-align: center;
@@ -17,11 +10,15 @@
 }
 .footer__header {
   margin-bottom: 6px !important;
-  color: var(--accent);
+  color: var(--accent-2);
+}
+.footer__container .heading__text-3 {
+  color: var(--secondary-2);
 }
 .footer__paragraph {
-  max-width: 195px;
+  max-width: 277px;
   margin: 0 auto;
+  color: var(--secondary-2);
 }
 .footer__paragraph_legacy {
   max-width: 100%;

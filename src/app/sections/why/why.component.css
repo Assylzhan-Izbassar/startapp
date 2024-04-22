@@ -1,22 +1,28 @@
 .why {
-}
-.why__container {
+  color: var(--primary-2);
 }
 .why__heading {
   margin-bottom: 23px;
-}
-.carts {
+  color: var(--primary-2);
 }
 .carts__item:not(:first-child) {
   margin-top: 30px;
 }
 .carts__header {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
 }
 .carts__number {
+  line-height: calc(56 / 72 * 100%);
 }
 .carts__title {
+  margin-left: 6px;
 }
 .carts__paragraph {
+  margin-top: 13px;
+  font-weight: 500;
+}
+.carts__paragraph .paragraph__text {
+  max-width: 285px;
+  margin: 0 auto;
 }

@@ -2,17 +2,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 
 :root {
-  --primary: #8ea8f3;
-  --secondary: #fbffff;
-  --accent: #fcbc4a;
-  --gray-100: #dde6fe;
-  --gray-300: #becffe;
-  --gray-400: #aabff7;
-  --gray-500: #859ad5;
-  --gray-600: #5e71a6;
-  --text: #222630;
-  --error-2: #fb310e;
-  --error-3: #e94b30;
+  --primary-1: #393e46;
+  --primary-2: #272829;
+  --primary-3: #000000;
+  --secondary-1: #fafafa;
+  --secondary-2: #eeeeee;
+  --secondary-3: #dbdbdb;
+  --accent-1: #fbdb8e;
+  --accent-2: #ffd369;
+  --accent-3: #ffc842;
+  --gray-100: #d5d6d7;
+  --gray-300: #a7a8a9;
+  --gray-400: #6f7376;
+  --gray-500: #393b3c;
+  --gray-600: #2a2b2c;
+  --gray-700: #1b1c1d;
+  --error-2: #7a453c;
+  --error-3: #ce604c;
   --heading-font: "Ubuntu", sans-serif;
   --common-font: "Lora", serif;
 }
@@ -92,12 +98,11 @@ select {
 }
 
 /* MAIN */
-
 body {
-  background-color: var(--secondary);
+  background-color: var(--secondary-2);
   font-family: var(--common-font);
   font-size: 16px;
-  color: var(--text);
+  color: var(--primary-2);
 }
 .wrapper {
   display: flex;
@@ -112,7 +117,7 @@ body {
 }
 ._container {
   margin: 0 auto;
-  padding: 50px 16px;
+  padding: 31px 16px;
 }
 ._img {
   position: relative;
@@ -126,11 +131,9 @@ body {
   left: 0;
   object-fit: cover;
 }
-._highlight {
-  color: var(--secondary);
-}
 .heading {
   font-family: var(--heading-font);
+  color: var(--primary-2);
 }
 .heading_margin > *:not(:last-child) {
   margin-bottom: 12px;
@@ -158,14 +161,9 @@ body {
 .heading_center {
   text-align: center;
 }
-.heading__subtext {
-  font-size: 18px;
-  line-height: calc(21 / 18 * 100%);
-}
 .heading__text,
 .heading__text-3,
-.heading__text-4,
-.heading__subtext {
+.heading__text-4 {
   position: relative;
   text-transform: uppercase;
   z-index: 10;
@@ -175,6 +173,7 @@ body {
 .paragraph__text {
   position: relative;
   z-index: 10;
+  line-height: calc(20 / 16 * 100%);
 }
 .paragraph__text_center {
   text-align: center;
@@ -187,14 +186,20 @@ body {
 }
 .action__button {
   display: inline-block;
-  background-color: var(--accent);
-  color: var(--text);
+  background-color: var(--accent-3);
+  color: var(--gray-700);
   padding: 15px 36px;
   text-transform: uppercase;
   font-family: var(--heading-font);
   font-weight: 500;
+  font-size: 18px;
+  line-height: calc(20 / 18 * 100%);
   border-radius: 13px;
   text-align: center;
+}
+
+.action__button_notrounded {
+  border-radius: 3px;
 }
 
 .action_center {

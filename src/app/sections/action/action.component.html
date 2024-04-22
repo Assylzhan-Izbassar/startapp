@@ -1,20 +1,72 @@
 <!-- CALL TO ACTION -->
-<div class="action">
+<div id="action" class="action">
   <div class="action__container _container">
     <div class="action__heading heading heading_margin heading_center">
-      <div class="heading__subtext">
-        Давай вместе превратим твою мечту в реальность
+      <div class="heading__text">Специально!</div>
+    </div>
+    <div class="action__timer timer">
+      <div class="timer__item">
+        <div class="action__heading heading">
+          <div class="heading__text">14</div>
+        </div>
+        <div class="action__paragraph paragraph">
+          <p class="paragraph__text">Дня</p>
+        </div>
       </div>
-      <div class="heading__text">Не жди, начни сейчас!</div>
+      <div class="timer__item">
+        <div class="action__heading heading">
+          <div class="heading__text">23</div>
+        </div>
+        <div class="action__paragraph paragraph">
+          <p class="paragraph__text">Часов</p>
+        </div>
+      </div>
+      <div class="timer__item">
+        <div class="action__heading heading">
+          <div class="heading__text">53</div>
+        </div>
+        <div class="action__paragraph paragraph">
+          <p class="paragraph__text">Минут</p>
+        </div>
+      </div>
+      <div class="timer__item">
+        <div class="action__heading heading">
+          <div class="heading__text">12</div>
+        </div>
+        <div class="action__paragraph paragraph">
+          <p class="paragraph__text">Секунд</p>
+        </div>
+      </div>
     </div>
     <div class="action__paragraph paragraph">
-      <div class="paragraph__text paragraph__text_center">
-        Запишись на консультацию уже сегодня и начни свой путь к свободе и
-        успеху в бизнесе!
+      <p class="paragraph__text paragraph__text_center">
+        Наша новая услуга готова предложить вам качественный сайт без Tilda по
+        специальной цене, всего за
+      </p>
+    </div>
+    <div class="action__price">
+      <div class="action__heading heading heading_center">
+        <div class="heading__text-3">75990 тенге</div>
+      </div>
+      <div class="action__heading heading heading_center">
+        <div class="heading__text">37990 тенге</div>
       </div>
     </div>
+    <div class="action__paragraph action__paragraph_width paragraph">
+      <p class="paragraph__text paragraph__text_center">
+        Успейте забронировать место уже сегодня и получите первую страницу
+        вашего сайта абсолютно бесплатно уже через 14 дней. Оставьте заявку ниже
+        и начнем работу!
+      </p>
+    </div>
+
     <div class="action__action action action_center">
-      <a [routerLink]="['contact-us']" class="action__button">Записаться</a>
+      <a
+        [routerLink]="['contact-us']"
+        href="pages/contact-us.html"
+        class="action__button"
+        >Оставить заявку</a
+      >
     </div>
   </div>
 </div>

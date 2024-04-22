@@ -1,49 +1,56 @@
 .services {
-  background-color: var(--primary);
-}
-.services__container {
+  background-color: var(--primary-3);
 }
 .services__container > *:not(:last-child) {
   margin-bottom: 23px;
 }
 .services__header {
-}
-.services__carts {
+  color: var(--secondary-1);
 }
 .services__carts-inner {
   display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  margin: 0px -16px !important;
 }
+
+.services__item:first-child {
+  margin-left: 16px;
+}
+
+.services__item:last-child {
+  margin-right: 16px;
+}
+
 .services__item {
   position: relative;
-  min-width: 249.19px;
-  background-color: var(--secondary);
+  min-width: 298px;
+  background-color: var(--accent-2);
 }
 .services__item:not(:last-child) {
-  margin-right: 23px;
+  margin-right: 16px;
 }
 .services__inner {
-  max-width: 229.19px;
+  max-width: 240px;
   margin: 0 auto;
-  padding: 15px 0 30px 0;
+  padding: 29px 0px;
 }
 .services__inner > *:not(:last-child) {
   margin-bottom: 15px;
 }
 .services__img {
-  padding: 0 0 calc(223 / 249.19 * 100%) 0;
+  padding: 0 0 calc(209 / 240 * 100%) 0;
 }
-.services__content {
+.services__content > *:not(:last-child) {
+  margin-bottom: 12px;
 }
 .services__title {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.services__title-heading {
-  max-width: 165.69px;
-}
 .services__paragraph {
-  max-width: 165.69px;
+  max-width: 240px;
 }
 .services__scroll {
   display: flex;
@@ -53,22 +60,25 @@
   max-height: 40px;
 }
 .services__arrow {
-  min-width: 40px;
-  padding: 0 0 calc(40 / 343 * 100%) 0;
+  min-width: 24px;
+  padding: 0 0 calc(24 / 343 * 100%) 0;
+}
+.services__arrow img {
+  object-fit: contain;
 }
 .services__dots {
   display: flex;
-  margin: 0 23px;
+  margin: 0 23px !important;
+}
+.services__dots > *:not(:last-child) {
+  margin-right: 8.75px;
 }
 .services__dot {
   width: 14px;
   height: 14px;
   border-radius: 7px;
-  background-color: var(--secondary);
-}
-.services__dot:not(:last-child) {
-  margin-right: 8.75px;
+  background-color: var(--secondary-2);
 }
 .services__dot_light {
-  background-color: var(--accent);
+  background-color: var(--accent-2);
 }

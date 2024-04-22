@@ -1,8 +1,8 @@
 <!-- OUR SERVICES -->
-<div class="services">
+<div id="services" class="services">
   <div class="services__container _container">
     <div class="services__header heading heading_center">
-      <h2 class="heading__text">Что мы предлагаем</h2>
+      <h2 class="heading__text">Как мы работаем</h2>
     </div>
     <div class="services__carts">
       <ul class="services__carts-inner">
@@ -14,13 +14,13 @@
             <div class="services__content">
               <div class="services__title heading">
                 <h3 class="services__title-heading heading__text-3">
-                  Анализ рынка
+                  Определяем цель лендинга
                 </h3>
-                <img src="assets/icons/service-icon.png" alt="Service Icon" />
               </div>
               <div class="services__paragraph paragraph">
                 <p class="paragraph__text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                  Мы начинаем с понимания ваших целей и потребностей, чтобы
+                  создать сайт, который эффективно решит ваши задачи.
                 </p>
               </div>
             </div>
@@ -29,38 +29,67 @@
         <li class="services__item">
           <div class="services__inner">
             <div class="services__img _img">
-              <img src="assets/services/cart-2.jpg" alt="Services Cart 1" />
+              <img src="assets/services/cart-2.jpg" alt="Services Cart 2" />
             </div>
             <div class="services__content">
               <div class="services__title heading">
                 <h3 class="services__title-heading heading__text-3">
                   Целевая аудитория
                 </h3>
-                <img src="assets/icons/service-icon.png" alt="Service Icon" />
               </div>
               <div class="services__paragraph paragraph">
                 <p class="paragraph__text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                  Затем мы анализируем вашу целевую аудиторию и разрабатываем
+                  уникальное предложение, которое привлечет и удержит ваших
+                  клиентов.
+                </p>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="services__item">
+          <div class="services__inner">
+            <div class="services__img _img">
+              <img src="assets/services/cart-3.jpg" alt="Services Cart 3" />
+            </div>
+            <div class="services__content">
+              <div class="services__title heading">
+                <h3 class="services__title-heading heading__text-3">
+                  Делаем дизайн на Figma
+                </h3>
+              </div>
+              <div class="services__paragraph paragraph">
+                <p class="paragraph__text">
+                  Мы разрабатываем дизайн вашего сайта на профессиональной
+                  платформе Figma, чтобы вам было легче визуализировать и
+                  утвердить концепцию.
+                </p>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="services__item">
+          <div class="services__inner">
+            <div class="services__img _img">
+              <img src="assets/services/cart-4.jpg" alt="Services Cart 4" />
+            </div>
+            <div class="services__content">
+              <div class="services__title heading">
+                <h3 class="services__title-heading heading__text-3">
+                  Верстаем сайт без Tilda
+                </h3>
+              </div>
+              <div class="services__paragraph paragraph">
+                <p class="paragraph__text">
+                  Создаем адаптивный и функциональный сайт без использования
+                  шаблонов Tilda, что дает больше гибкости и возможностей для
+                  развития вашего бизнеса.
                 </p>
               </div>
             </div>
           </div>
         </li>
       </ul>
-    </div>
-    <div class="services__scroll">
-      <div class="services__arrow _img" (click)="switchLeft()">
-        <img src="assets/icons/left.png" alt="Left Arrow" />
-      </div>
-      <ul class="services__dots">
-        <li
-          class="services__dot"
-          *ngFor="let item of [].constructor(cartsCount); let i = index"
-        ></li>
-      </ul>
-      <div class="services__arrow _img" (click)="switchRight()">
-        <img src="assets/icons/right.png" alt="Right Arrow" />
-      </div>
     </div>
   </div>
 </div>

@@ -6,7 +6,7 @@
   top: 0;
   left: 0;
   z-index: 20;
-  background-color: var(--secondary);
+  background-color: var(--secondary-1);
 }
 
 .header__container {
@@ -26,25 +26,25 @@
 
 .header__burger {
 }
-
 .header__close {
-  /* display: flex; */
   display: none;
 }
 .header__close span {
   margin-right: 5px;
 }
 
+/* MENU */
 .menu {
   display: none;
   position: fixed;
   width: 100%;
-  background-color: var(--gray-100);
+  background-color: var(--primary-1);
 }
 .menu__container {
   padding: 50px 35px;
 }
 .menu__item {
+  color: var(--secondary-2);
 }
 .menu__item:not(:last-child) {
   margin-bottom: 23px;

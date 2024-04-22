@@ -1,4 +1,5 @@
 import { Component, Renderer2 } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -12,7 +13,7 @@ export class HeaderComponent {
   menuNode: HTMLElement | undefined;
   isNavShowed = false;
 
-  constructor(private renderer: Renderer2) {}
+  constructor(private renderer: Renderer2, private router: Router) {}
 
   toggleNav() {
     this.body = document.body;
@@ -49,5 +50,18 @@ export class HeaderComponent {
 
   closeNav() {
     this.hideNav();
+  }
+
+  scrollToFragment(fragment: string): boolean {
+    const targetElement = document.getElementById(fragment);
+
+    this.closeNav();
+
+    if (targetElement) {
+      const desiredScrollPosition = targetElement.offsetTop - 86;
+      window.scrollTo({ top: desiredScrollPosition, behavior: 'smooth' });
+      this.router?.navigate([], { fragment: fragment });
+    }
+    return false;
   }
 }
