@@ -55,15 +55,17 @@ export class HeaderComponent implements AfterContentChecked {
   }
 
   scrollToFragment(fragment: string): boolean {
-    const targetElement = document.getElementById(fragment);
+    this.router.navigate(['/'], { fragment: fragment });
 
-    this.closeNav();
+    setTimeout(() => {
+      this.closeNav();
+      const targetElement = document.getElementById(fragment);
+      if (targetElement) {
+        const desiredScrollPosition = targetElement.offsetTop - 86;
+        window.scrollTo({ top: desiredScrollPosition, behavior: 'smooth' });
+      }
+    }, 250);
 
-    if (targetElement) {
-      const desiredScrollPosition = targetElement.offsetTop - 86;
-      window.scrollTo({ top: desiredScrollPosition, behavior: 'smooth' });
-      this.router?.navigate([], { fragment: fragment });
-    }
     return false;
   }
 }

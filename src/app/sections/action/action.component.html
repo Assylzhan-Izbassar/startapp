@@ -4,46 +4,16 @@
     <div class="action__heading heading heading_margin heading_center">
       <div class="heading__text">Специально!</div>
     </div>
-    <div class="action__timer timer">
-      <div class="timer__item">
-        <div class="action__heading heading">
-          <div class="heading__text">14</div>
-        </div>
-        <div class="action__paragraph paragraph">
-          <p class="paragraph__text">Дня</p>
-        </div>
-      </div>
-      <div class="timer__item">
-        <div class="action__heading heading">
-          <div class="heading__text">23</div>
-        </div>
-        <div class="action__paragraph paragraph">
-          <p class="paragraph__text">Часов</p>
-        </div>
-      </div>
-      <div class="timer__item">
-        <div class="action__heading heading">
-          <div class="heading__text">53</div>
-        </div>
-        <div class="action__paragraph paragraph">
-          <p class="paragraph__text">Минут</p>
-        </div>
-      </div>
-      <div class="timer__item">
-        <div class="action__heading heading">
-          <div class="heading__text">12</div>
-        </div>
-        <div class="action__paragraph paragraph">
-          <p class="paragraph__text">Секунд</p>
-        </div>
-      </div>
-    </div>
+
+    <app-timer></app-timer>
+
     <div class="action__paragraph paragraph">
       <p class="paragraph__text paragraph__text_center">
         Наша новая услуга готова предложить вам качественный сайт без Tilda по
         специальной цене, всего за
       </p>
     </div>
+    
     <div class="action__price">
       <div class="action__heading heading heading_center">
         <div class="heading__text-3">75990 тенге</div>
@@ -61,9 +31,7 @@
     </div>
 
     <div class="action__action action action_center">
-      <a
-        [routerLink]="['/contact-us']"
-        class="action__button"
+      <a [routerLink]="['/contact-us']" class="action__button"
         >Оставить заявку</a
       >
     </div>

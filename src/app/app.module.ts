@@ -22,6 +22,7 @@ import {
   provideHttpClient,
   withFetch,
 } from '@angular/common/http';
+import { TimerComponent } from './components/timer/timer.component';
 
 @NgModule({
   declarations: [
@@ -37,6 +38,7 @@ import {
     ThankYouComponent,
     HeaderComponent,
     FooterComponent,
+    TimerComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,17 @@
+.timer__inner {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 17px;
+}
+.timer__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--accent-2);
+  padding: 6.605px 0px;
+  border-radius: 4px;
+  min-width: 74px;
+}
+.timer__item:not(:last-child) {
+  margin-right: 16px;
+}
