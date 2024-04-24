@@ -30,3 +30,6 @@
 .footer__logo img {
   width: 100%;
 }
+.footer__call {
+  color: inherit;
+}
