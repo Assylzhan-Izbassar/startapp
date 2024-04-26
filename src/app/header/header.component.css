@@ -42,3 +42,6 @@
 .menu__item:not(:last-child) {
   margin-bottom: 23px;
 }
+.menu__item_sale a {
+  color: var(--accent-3) !important;
+}
