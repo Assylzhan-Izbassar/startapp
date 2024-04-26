@@ -2,16 +2,15 @@
   background-color: var(--primary-3);
   color: var(--secondary-2);
 }
-
-.pain__container {
-}
 .pain__container > *:not(:first-child) {
   margin-top: 23px;
 }
 .pain__container .heading {
   color: var(--secondary-2);
 }
-.pain__heading {
+.pain__subheading {
+  margin-top: 23px;
+  margin-bottom: 23px !important;
 }
 .pain__content {
   background-color: var(--primary-2);
@@ -21,9 +20,6 @@
 }
 .pain__content-inner > *:not(:last-child) {
   margin-bottom: 12px;
-}
-
-.pain__list {
 }
 .pain__item {
   display: flex;
@@ -35,7 +31,6 @@
 .pain__item-text {
   display: inline-block;
 }
-
 .pain__number {
   display: inline-block;
   margin-right: 7px;

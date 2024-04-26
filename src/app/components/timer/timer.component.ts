@@ -1,4 +1,10 @@
-import { ChangeDetectorRef, Component, OnInit } from '@angular/core';
+import {
+  ChangeDetectorRef,
+  Component,
+  OnInit,
+  EventEmitter,
+  Output,
+} from '@angular/core';
 
 @Component({
   selector: 'app-timer',
@@ -15,6 +21,7 @@ export class TimerComponent implements OnInit {
   private millisecondsInDay = 24 * 60 * 60 * 1000;
   startDate = new Date(2024, 3, 23, 10, 37, 31);
   endDate = new Date(this.startDate.getTime() + 14 * this.millisecondsInDay);
+  @Output() newItemEvent = new EventEmitter<number>();
 
   constructor(private cdr: ChangeDetectorRef) {
     this.remainingTime = {
@@ -35,6 +42,15 @@ export class TimerComponent implements OnInit {
   calculateRemainingTime() {
     const currTime = new Date();
     const remainingMilliseconds = this.endDate.getTime() - currTime.getTime();
+
+    if (
+      this.remainingTime.days !=
+      Math.floor(remainingMilliseconds / (1000 * 60 * 60 * 24))
+    ) {
+      this.newItemEvent.emit(
+        Math.floor(remainingMilliseconds / (1000 * 60 * 60 * 24))
+      );
+    }
 
     this.remainingTime = {
       days: Math.floor(remainingMilliseconds / (1000 * 60 * 60 * 24)),

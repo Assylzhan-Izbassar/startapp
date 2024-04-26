@@ -23,6 +23,7 @@ import {
   withFetch,
 } from '@angular/common/http';
 import { TimerComponent } from './components/timer/timer.component';
+import { LastActionComponent } from './sections/last-action/last-action.component';
 
 @NgModule({
   declarations: [
@@ -39,6 +40,7 @@ import { TimerComponent } from './components/timer/timer.component';
     HeaderComponent,
     FooterComponent,
     TimerComponent,
+    LastActionComponent,
   ],
   imports: [
     BrowserModule,

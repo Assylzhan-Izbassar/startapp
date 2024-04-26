@@ -1,9 +1,10 @@
 .why {
-  color: var(--primary-2);
+  color: var(--secondary-2);
+  background-color: var(--primary-3);
 }
 .why__heading {
   margin-bottom: 23px;
-  color: var(--primary-2);
+  color: var(--secondary-2);
 }
 .carts__item:not(:first-child) {
   margin-top: 30px;
@@ -11,6 +12,7 @@
 .carts__header {
   display: flex;
   align-items: flex-start;
+  color: var(--secondary-2);
 }
 .carts__number {
   line-height: calc(56 / 72 * 100%);

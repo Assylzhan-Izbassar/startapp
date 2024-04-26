@@ -168,8 +168,6 @@ body {
   text-transform: uppercase;
   z-index: 10;
 }
-.paragraph {
-}
 .paragraph__text {
   position: relative;
   z-index: 10;
@@ -188,7 +186,7 @@ body {
   display: inline-block;
   background-color: var(--accent-3);
   color: var(--gray-700);
-  padding: 15px 36px;
+  padding: 18px 36px;
   text-transform: uppercase;
   font-family: var(--heading-font);
   font-weight: 500;

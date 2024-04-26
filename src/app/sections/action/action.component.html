@@ -5,35 +5,33 @@
       <div class="heading__text">Специально!</div>
     </div>
 
-    <app-timer></app-timer>
+    <app-timer (newItemEvent)="getDays($event)"></app-timer>
 
     <div class="action__paragraph paragraph">
       <p class="paragraph__text paragraph__text_center">
-        Наша новая услуга готова предложить вам качественный сайт без Tilda по
-        специальной цене, всего за
+        Только 14 дней, в знак нашего запуска, мы предоставляем акцию “Сайт по
+        цене блендера”!
       </p>
     </div>
 
     <div class="action__price">
       <div class="action__heading heading heading_center">
-        <div class="heading__text-3">450 тысячи тенге</div>
+        <div class="heading__text-3">150 тысячи тенге</div>
       </div>
       <div class="action__heading heading heading_center">
-        <div class="heading__text">300 тысячи тенге</div>
+        <div class="heading__text">50 тысячи тенге</div>
       </div>
     </div>
     <div class="action__paragraph action__paragraph_width paragraph">
       <p class="paragraph__text paragraph__text_center">
-        Успейте забронировать место уже сегодня и получите первую страницу
-        вашего сайта абсолютно бесплатно уже через 14 дней. Оставьте заявку ниже
-        и начнем работу!
+        Зная то, что вы ничего не теряете, успейте
+        <strong>получить</strong> первую страницу вашего сайта
+        <strong>бесплатно</strong> и забронировать место по акции уже сейчас.
       </p>
     </div>
 
     <div class="action__action action action_center">
-      <a [routerLink]="['/contact-us']" class="action__button"
-        >Оставить заявку</a
-      >
+      <a [routerLink]="['/contact-us']" class="action__button">Забронировать</a>
     </div>
   </div>
 </div>
